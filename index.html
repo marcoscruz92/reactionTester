@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Learning Javascript</title>
+
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+	body{
+		font-family: Helvetica;
+		text-align: center;
+	}
+	#box{
+		position: relative;
+		top: 1em;
+		height: 200px;
+		width: 200px;
+		/*border: 2px solid #c0392b;*/
+		background-color: #e74c3c;
+		display: none;
+	}
+	#result_box {
+		position: relative;
+		margin-top: 4em;
+		margin-left: 27em;
+		height: 100px;
+		width: 400px;
+		background-color: #e74c3c;
+		color: white;
+		border: 1px solid #c0392b;
+		text-align: center;
+	}
+
+	#result_box span {
+		font-size: 14px;
+	}
+
+</style>
+
+ </head>
+
+ <body>	
+ 		<h1>Test your reactions!</h1>
+ 		<p>Click on the boxes and circles as quickly as you can!</p>
+ 	 	<div id="result_box">
+ 		<h3>Your response time is:</h3>
+ 		<span id="result"></span>
+ 	</div>
+ 	<div id="box"></div>
+
+	 <script type="text/javascript">
+	 	var clickedTime;
+	 	var createdTime;
+	 	var reactionTime;
+	 	var randomMove = 0;
+	 	var box = document.getElementById("box");
+	 	var result_box = document.getElementById("result_box")
+	 	var result = document.getElementById("result");
+	 	function makeBox(){
+	 		setTimeout(function() {
+		 		box.style.display = "block";
+		 		resetBox();
+		 		changeColor();
+		 		changeShape();
+		 		moveBox();
+		 		result.innerHTML = "";
+		 		createdTime = Date.now();
+		 		}, Math.random() * 801 );
+	 	}
+
+	 	function moveBox(){
+	 		randomMove =  Math.floor(Math.random() * 64.5);
+	 		randomMove = randomMove.toString();
+	 		box.style.left = randomMove + "em";
+	 	}
+
+	 	function changeColor(){
+	 		var randomColor = Math.floor(Math.random() * 4);
+	 		if(randomColor == 4){
+	 			box.style.backgroundColor = "#1abc9c";
+	 		} 
+	 		else if(randomColor == 3) {
+	 			box.style.backgroundColor = "#3498db";
+	 		}
+
+	 		else if(randomColor == 2) {
+	 			box.style.backgroundColor = "#f39c12";
+	 		}
+
+	 		else if(randomColor == 1) {
+	 			box.style.backgroundColor = "#8e44ad";
+	 		}
+	 		else{
+	 			box.style.backgroundColor = "#2c3e50";
+	 		}
+	 	}
+
+	 	function changeShape(){
+	 		var randomShape = Math.random() * 4;
+	 		if( randomShape > 1.50){
+	 			box.style.borderRadius = "50%";
+	 		} else{
+	 			box.style.borderRadius = "0px";
+	 		}
+	 	}
+
+	 	function resetBox(){
+	 		box.style.left = 0;
+	 	}
+
+	 	box.onclick = function(){
+	 		clickedTime = Date.now();
+	 		reactionTime = (clickedTime - createdTime) / 1000;
+	 		result.innerHTML = reactionTime +" seconds";
+	 		this.style.display = "none";
+	 		makeBox();
+	 	}
+	 	makeBox();
+
+	 </script>
+  </body>
+</html>
