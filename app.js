@@ -18,7 +18,7 @@
 	 	}
 
 	 	function moveBox(){
-	 		randomMove =  Math.floor(Math.random() * 90);
+	 		randomMove =  Math.floor(Math.random() * 85);
 	 		randomMove = randomMove.toString();
 	 		box.style.left = randomMove + "%";
 	 	}
