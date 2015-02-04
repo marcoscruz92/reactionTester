@@ -33,7 +33,7 @@ body{
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px)  and (max-width: 480px){ 
 	#box{
-		height: 60px;
+		height: 40px;
 	}
 
 	#result_box {
@@ -72,7 +72,7 @@ body{
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 		#box{
-		height: 60px;
+		height: 40px;
 	}
 		#result_box {
 		position: relative;
@@ -90,7 +90,7 @@ body{
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 	#box{
-		height: 60px;
+		height: 40px;
 	}
 		#result_box {
 		position: relative;
@@ -109,7 +109,7 @@ body{
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 		#box{
-		height: 60px;
+		height: 40px;
 	}
 		#result_box {
 		position: relative;
@@ -127,7 +127,7 @@ body{
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 		#box{
-		height: 60px;
+		height: 40px;
 	}
 		#result_box {
 		position: relative;
