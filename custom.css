@@ -1,0 +1,143 @@
+body{
+	font-family: Helvetica;
+	text-align: center;
+}
+#container{
+	height: 400px;
+	width: 100%;
+}
+#box{
+	position: relative;
+	top: 8%;
+	height: 200px;
+	width: 15%;
+	/*border: 2px solid #c0392b;*/
+	background-color: #e74c3c;
+	display: none;
+}
+#result_box {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 5%;
+	height: 100px;
+	width: 32%;
+	background-color: #e74c3c;
+	color: white;
+	border: 1px solid #c0392b;
+	text-align: center;
+}
+
+#result_box span {
+	font-size: 14px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px)  and (max-width: 480px){ 
+	#box{
+		height: 80px;
+	}
+
+	#result_box {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 5%;
+		height: 100px;
+		width: 50%;
+		background-color: #e74c3c;
+		color: white;
+		border: 1px solid #c0392b;
+		text-align: center;
+	}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+	#box{
+		height: 80px;
+	}
+		#result_box {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 5%;
+		height: 100px;
+		width: 50%;
+		background-color: #e74c3c;
+		color: white;
+		border: 1px solid #c0392b;
+		text-align: center;
+	}
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+		#box{
+		height: 80px;
+	}
+		#result_box {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 5%;
+		height: 100px;
+		width: 50%;
+		background-color: #e74c3c;
+		color: white;
+		border: 1px solid #c0392b;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+	#box{
+		height: 80px;
+	}
+		#result_box {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 5%;
+		height: 100px;
+		width: 50%;
+		background-color: #e74c3c;
+		color: white;
+		border: 1px solid #c0392b;
+		text-align: center;
+	}
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+		#box{
+		height: 80px;
+	}
+		#result_box {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 5%;
+		height: 100px;
+		width: 50%;
+		background-color: #e74c3c;
+		color: white;
+		border: 1px solid #c0392b;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+		#box{
+		height: 80px;
+	}
+		#result_box {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 5%;
+		height: 100px;
+		width: 50%;
+		background-color: #e74c3c;
+		color: white;
+		border: 1px solid #c0392b;
+		text-align: center;
+	}
+}
