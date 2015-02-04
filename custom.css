@@ -73,7 +73,7 @@ body{
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 		#box{
-		height: 60px;
+		height: 80px;
 	}
 		#result_box {
 		position: relative;
@@ -111,7 +111,7 @@ body{
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 		#box{
-		height: 60px;
+		height: 80px;
 	}
 		#result_box {
 		position: relative;
