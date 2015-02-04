@@ -41,6 +41,7 @@ body{
 		margin: 0 auto;
 		margin-top: 5%;
 		height: 100px;
+		padding-bottom: 0.5em;
 		width: 50%;
 		background-color: #e74c3c;
 		color: white;
@@ -96,6 +97,7 @@ body{
 		position: relative;
 		margin: 0 auto;
 		margin-top: 5%;
+		padding-bottom: 0.5em;
 		height: 100px;
 		width: 50%;
 		background-color: #e74c3c;
@@ -109,7 +111,7 @@ body{
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 		#box{
-		height: 40px;
+		height: 60px;
 	}
 		#result_box {
 		position: relative;
